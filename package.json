@@ -12,7 +12,8 @@
   "nativePackage": true,
   "scripts": {
     "build": "tsc --project tsconfig.json",
-    "postinstall": "yarn build",
+    "postinstall": "yarn tsc --project tsconfig.json",
+    "tsc": "./node_modules/typescript/bin/tsc",
     "clean": "rm -rf dist/",
     "test": "jest",
     "lint": "yarn eslint -c .eslintrc.js",
