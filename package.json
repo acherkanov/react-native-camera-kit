@@ -11,11 +11,9 @@
   "description": "A high performance, fully featured, rock solid camera library for React Native applications",
   "nativePackage": true,
   "scripts": {
-    "build": "tsc --project tsconfig.json",
-    "postinstall": "yarn tsc --project tsconfig.json",
-    "tsc": "./node_modules/typescript/bin/tsc",
     "clean": "rm -rf dist/",
     "test": "jest",
+    "postinstall": "yarn build",
     "lint": "yarn eslint -c .eslintrc.js",
     "release": "yarn clean && yarn build && yarn publish --verbose",
     "release:beta": "yarn clean && yarn build && yarn publish --tag beta --verbose",
