@@ -12,6 +12,7 @@
   "nativePackage": true,
   "scripts": {
     "build": "tsc --project tsconfig.json",
+    "postinstall": "yarn build",
     "clean": "rm -rf dist/",
     "test": "jest",
     "lint": "yarn eslint -c .eslintrc.js",
