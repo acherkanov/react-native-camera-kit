@@ -13,7 +13,6 @@
   "scripts": {
     "clean": "rm -rf dist/",
     "test": "jest",
-    "postinstall": "yarn build",
     "lint": "yarn eslint -c .eslintrc.js",
     "release": "yarn clean && yarn build && yarn publish --verbose",
     "release:beta": "yarn clean && yarn build && yarn publish --tag beta --verbose",
